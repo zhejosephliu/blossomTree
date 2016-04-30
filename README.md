@@ -20,6 +20,6 @@ To install the [devtools](https://cran.r-project.org/package=devtools) package:
 
 Please read the documentation for the main function blossomTree.
 
-#### Reference
+#### References
 
 Zhe Liu and John Lafferty. Blossom tree graphical models. NIPS, 2014.
