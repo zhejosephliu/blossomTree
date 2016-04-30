@@ -1,24 +1,25 @@
 # blossomTree
-Package: blossomTree
 
-Type: Package
+This is blossomTree R package for blossom tree graph structure estimation and density estimation. 
 
-Title: Blossom Tree Graphical Models
+For more information please contact zhe.liu.uchicago@gmail.com
 
-Version: 0.1.0
+#### Description
 
-Author: Zhe Liu
+Provides an estimation method for blossom tree graphical models. Blossom tree graphical models combine the ideas behind trees and Gaussian graphical models to form a new nonparametric family of graphical models. The approach is to attach nonparanormal blossoms, with arbitrary graphs, to a collection of nonparametric trees. The tree edges are chosen to connect variables that most violate joint Gaussianity. The non-tree edges are partitioned into disjoint groups, and assigned to tree nodes using a nonparametric partial correlation statistic. A nonparanormal blossom is then grown for each group using established methods based on the graphical lasso. The result is a factorization with respect to the union of the tree branches and blossoms, defining a high-dimensional joint density that can be efficiently estimated and evaluated on test points.
 
-Maintainer: Zhe Liu
+#### Installation
 
-Description: Provides an estimation method for blossom tree graphical models. Blossom tree graphical models combine the ideas behind trees and Gaussian graphical models to form a new nonparametric family of graphical models. The approach is to attach nonparanormal blossoms, with arbitrary graphs, to a collection of nonparametric trees. The tree edges are chosen to connect variables that most violate joint Gaussianity. The non-tree edges are partitioned into disjoint groups, and assigned to tree nodes using a nonparametric partial correlation statistic. A nonparanormal blossom is then grown for each group using established methods based on the graphical lasso. The result is a factorization with respect to the union of the tree branches and blossoms, defining a high-dimensional joint density that can be efficiently estimated and evaluated on test points.
+To install the [devtools](https://cran.r-project.org/package=devtools) package:
 
-License: GPL-3
+    install.packages("devtools")
+    library(devtools)
+    install_github("zhejosephliu/blossomTree")
 
-LazyData: TRUE
+#### Usage
 
-Depends: R (>= 3.0.0)
+Please see the main function blossomTree.
 
-Imports: bisoreg, glasso, huge, igraph, MASS, mvtnorm
+#### Reference
 
-RoxygenNote: 5.0.1
+Zhe Liu and John Lafferty. Blossom tree graphical models. NIPS, 2014.
