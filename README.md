@@ -7,9 +7,9 @@ Title: Blossom Tree Graphical Models
 
 Version: 0.1.0
 
-Author: Zhe Liu <zheliu@uchicago.edu>
+Author: Zhe Liu
 
-Maintainer: Zhe Liu <zheliu@uchicago.edu>
+Maintainer: Zhe Liu
 
 Description: Provides an estimation method for blossom tree graphical models. Blossom tree graphical models combine the ideas behind trees and Gaussian graphical models to form a new nonparametric family of graphical models. The approach is to attach nonparanormal blossoms, with arbitrary graphs, to a collection of nonparametric trees. The tree edges are chosen to connect variables that most violate joint Gaussianity. The non-tree edges are partitioned into disjoint groups, and assigned to tree nodes using a nonparametric partial correlation statistic. A nonparanormal blossom is then grown for each group using established methods based on the graphical lasso. The result is a factorization with respect to the union of the tree branches and blossoms, defining a high-dimensional joint density that can be efficiently estimated and evaluated on test points.
 
