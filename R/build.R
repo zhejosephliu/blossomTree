@@ -26,7 +26,7 @@ pure.blossom.tree <- function (xtrain, xheld, g, wt, bound = 8, prune = FALSE, l
   if (max_edges >= ecount(g)) {
     max_edges <- ecount(g)
   }
-  if (ecount(g) > 0){
+  if (ecount(g) > 0) {
     for (i in 1:max_edges) {
       cur_vs <- ends(g, wt_sort_ids[i])
       v1 <- cur_vs[1]
@@ -38,7 +38,7 @@ pure.blossom.tree <- function (xtrain, xheld, g, wt, bound = 8, prune = FALSE, l
         cluster_size[cluster_id[v1i]] <- cluster_size[cluster_id[v1i]] + cluster_size[cluster_id[v2i]]
         old_id <- cluster_id[v2i]
         new_id <- cluster_id[v1i]
-        for (j in 1:length(cluster_id)){
+        for (j in 1:length(cluster_id)) {
           if (cluster_id[j] == old_id) {
             cluster_id[j] <- new_id
           }

@@ -11,7 +11,7 @@ negentropy <- function (x, m) {
     }
   }
   for (j in c(1:(d - 1))) {
-    for (k in c((j + 1):d)){
+    for (k in c((j + 1):d)) {
       cur_K2 <- kde2d(x[, j], x[, k], n = m, h = c(h2[j], h2[k]) * 4)
       cur_K2_val <- cur_K2$z + 1e-200
       x_range <- max(cur_K2$x) - min(cur_K2$x)

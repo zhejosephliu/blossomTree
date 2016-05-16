@@ -37,7 +37,7 @@ kde2d.new <- function (x, y, h, x.new, y.new, lims = c(range(x), range(y))) {
   }
   gx <- x.new
   gy <- y.new
-  if (missing(h)){
+  if (missing(h)) {
     h <- c(bandwidth.nrd2d(x, FALSE), bandwidth.nrd2d(y, FALSE))
   }
   ax <- outer(gx, x, "-") / h[1L]

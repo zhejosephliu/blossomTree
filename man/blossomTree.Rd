@@ -22,7 +22,7 @@ If \code{verbose = FALSE}, tracing information printing is disabled. The default
 }
 }
 \details{
-Partition the data matrix into two subsamples with equal size by random allocation. The first subsample is used to construct a family of blossom tree graphs and the corresponding density estimators, while the second subsample is then used to determine the optimal blossom tree by maximizing the held-out log-likelihood.
+The function partitions the data matrix into two subsamples with equal size by random allocation. The first subsample is used to construct a family of blossom tree graphs and the corresponding density estimators, while the second subsample is then used to determine the optimal blossom tree by maximizing the held-out log-likelihood.
 
 The refit graphical lasso is a two-step procedure: in the first step, a sparse inverse covariance matrix is obtained by the graphical lasso; in the second step, a Gaussian model is refit without regularization, but enforcing the sparsity pattern obtained in the first step.
 }
